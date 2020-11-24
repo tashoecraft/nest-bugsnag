@@ -13,6 +13,6 @@ export class BugsnagService {
   private readonly _instance: BugsnagClientInterface;
 
   constructor(options: BugsnagModuleOptions) {
-    this._instance = bugsnag(options);
+    this._instance = bugsnag.start(options);
   }
 }
